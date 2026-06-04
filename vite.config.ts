@@ -3,9 +3,11 @@ import react from '@vitejs/plugin-react';
 import path from 'path';
 import {defineConfig} from 'vite';
 
-export default defineConfig(() => {
+const repoBase = '/Classroom-028-Campus-Space-Wayfinding-System/';
+
+export default defineConfig(({mode}) => {
   return {
-    base: './',
+    base: mode === 'production' ? repoBase : '/',
     plugins: [react(), tailwindcss()],
     resolve: {
       alias: {

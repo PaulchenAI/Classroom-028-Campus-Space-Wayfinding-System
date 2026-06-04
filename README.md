@@ -1,20 +1,35 @@
-<div align="center">
-<img width="1200" height="475" alt="GHBanner" src="https://ai.google.dev/static/site-assets/images/share-ais-513315318.png" />
-</div>
+# Classroom 028 Campus Space Wayfinding System
 
-# Run and deploy your AI Studio app
+校园 028 教室导视单页应用，使用 `Vite + React + TypeScript` 构建。
 
-This contains everything you need to run your app locally.
+## 本地运行
 
-View your app in AI Studio: https://ai.studio/apps/c3a4ade0-9884-4466-8a92-b3148d88c0e1
+前置条件：`Node.js 20+`
 
-## Run Locally
-
-**Prerequisites:**  Node.js
-
-
-1. Install dependencies:
+1. 安装依赖
    `npm install`
-2. Set the `GEMINI_API_KEY` in [.env.local](.env.local) to your Gemini API key
-3. Run the app:
+2. 启动开发环境
    `npm run dev`
+3. 本地构建
+   `npm run build`
+
+## GitHub Pages 部署
+
+仓库地址：
+`https://github.com/PaulchenAI/Classroom-028-Campus-Space-Wayfinding-System`
+
+项目已经按 GitHub Pages 子路径部署做了配置：
+- 生产环境 `base` 为 `/Classroom-028-Campus-Space-Wayfinding-System/`
+- 推送到 `main` 后，GitHub Actions 会自动构建并发布 `dist/`
+
+首次启用时需要在 GitHub 仓库设置里确认：
+1. 打开 `Settings -> Pages`
+2. `Source` 选择 `GitHub Actions`
+
+发布成功后，默认访问地址为：
+`https://paulchenai.github.io/Classroom-028-Campus-Space-Wayfinding-System/`
+
+## 说明
+
+- `ConsoleApp1/` 是独立的 .NET 控制台项目，不会部署到 GitHub Pages
+- GitHub Pages 只会托管前端静态构建产物 `dist/`

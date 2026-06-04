@@ -1,7 +1,8 @@
 {
-  "name": "react-example",
+  "name": "classroom-028-campus-space-wayfinding-system",
   "private": true,
   "version": "0.0.0",
+  "description": "Campus wayfinding single-page app for locating Classroom 028.",
   "type": "module",
   "scripts": {
     "dev": "vite --port=3000 --host=0.0.0.0",
